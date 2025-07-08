@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CT1010953 - Gustavo Iserte Bonfm</title>
+  <link rel="stylesheet" href="task_3.css">
+</head>
+
+<body>
+  <h1>Sun Rise Hotel</h1>
+  <h2>Reservation Form</h2>
+
+  <form>
+    <label for="last-name">Last Name:</label>
+    <input required pattern="^[A-Za-z]{3,35}$" title="Only letters allowed, between 3 and 35 characters" type="text"
+      id="last-name" name="last-name"><br><br>
+
+    <label for="first-name">First Name:</label>
+    <input required pattern="^[A-Za-z]{3,35}$" title="Only letters allowed, between 3 and 35 characters" type="text"
+      id="first-name" name="first-name"><br><br>
+
+    <label for="guest-email">E-mail:</label>
+    <input required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Use only lowercase letters for your email"
+      type="email" id="guest-email" name="guest-email"><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required pattern="\d{3} \d{3} \d{4}" title="Format: 123 456 7890">
+
+    <label for="document-id">Upload passport or ID:</label>
+    <input required type="file" id="document-id" name="document-id"><br><br>
+
+    <fieldset>
+      <legend><strong>Reservation</strong></legend>
+
+      <input required type="radio" name="reservation" id="suite">
+      <label for="suite">Suite</label><br>
+
+      <input required type="radio" name="reservation" id="double-room">
+      <label for="double-room">Double Room</label><br>
+
+      <input required type="radio" name="reservation" id="single-room">
+      <label for="single-room">Single Room</label><br>
+    </fieldset>
+
+    <label for="arrival-day">Arriving On:</label><br>
+    <input required type="date" name="arrival-day" id="arrival-day">
+    <input required type="time" name="arrival-time" id="arrival-time"><br><br>
+
+    <label for="num-days">Number of days</label>
+    <input required type="number" id="num-days" name="num-days">
+
+    <p><strong>Services</strong></p>
+    <div class="checkbox-group" style="margin-bottom: 1rem;">
+      <label for="breakfast">Breakfast</label>
+      <input required type="checkbox" name="breakfast" id="breakfast"><br>
+
+      <label for="parking">Parking</label>
+      <input required type="checkbox" name="parking" id="parking"><br>
+
+      <label for="laundry">Laundry</label>
+      <input required type="checkbox" name="laundry" id="laundry"><br>
+    </div>
+
+    <label for="comments">Reservation Comments:</label><br>
+    <textarea name="comments" id="comments"></textarea><br>
+
+    <input required type="reset" value="Reset">
+    <input required type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
