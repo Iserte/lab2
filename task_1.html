@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CT1010953 - Gustavo Iserte Bonfm</title>
+  <link rel="stylesheet" href="task_1.css">
+</head>
+
+<body>
+  <h1>Sun Rise Hotel</h1>
+  <h2>Reservation Form</h2>
+
+  <form>
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name"><br><br>
+
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name"><br><br>
+
+    <fieldset>
+      <legend><strong>Reservation</strong></legend>
+
+      <input type="radio" name="reservation" id="suite">
+      <label for="suite">Suite</label><br>
+
+      <input type="radio" name="reservation" id="double-room">
+      <label for="double-room">Double Room</label><br>
+
+      <input type="radio" name="reservation" id="single-room">
+      <label for="single-room">Single Room</label><br>
+    </fieldset>
+
+    <label for="arrival-day">Arriving On:</label>
+    <select id="arrival-day" name="arrival-day">
+      <option value="monday">Monday</option>
+      <option value="tuesday">Tuesday</option>
+      <option value="wednesday">Wednesday</option>
+      <option value="thursday">Thursday</option>
+      <option value="friday">Friday</option>
+      <option value="saturday">Saturday</option>
+      <option value="sunday">Sunday</option>
+    </select><br>
+
+    <label for="num-days">Number of days</label>
+    <input type="number" id="num-days" name="num-days">
+
+    <p><strong>Services</strong></p>
+    <div class="checkbox-group">
+      <label for="breakfast">Breakfast</label>
+      <input type="checkbox" name="breakfast" id="breakfast"><br>
+
+      <label for="parking">Parking</label>
+      <input type="checkbox" name="parking" id="parking"><br>
+
+      <label for="laundry">Laundry</label>
+      <input type="checkbox" name="laundry" id="laundry"><br>
+    </div>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
